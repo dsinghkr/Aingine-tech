@@ -15,7 +15,7 @@ RUN npm ci
 COPY . .
 
 # Build the application
-RUN npm run build
+RUN node build.cjs
 
 # Install serve to run the built app
 RUN npm install -g serve
